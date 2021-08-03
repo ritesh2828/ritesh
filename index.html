@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+         function sum() {
+             var first = document.myscreen.num1.value;
+             var second = document.myscreen.num2.value;
+             var result = parseInt(first) + parseInt(second);
+             window.document.myscreen.res.value=result;
+         }
+         function sub() {
+             var first = window.document.myscreen.num1.value;
+             var second = window.document.myscreen.num2.value;
+             var result = parseInt(first) - parseInt(second);
+             window.document.myscreen.res.value=result;
+         }
+         function multi() {
+             var first = window.document.myscreen.num1.value;
+             var second = window.document.myscreen.num2.value;
+             var result = parseInt(first) * parseInt(second);
+             window.document.myscreen.res.value=result;
+         }
+         function divide() {
+             var first = window.document.myscreen.num1.value;
+             var second = window.document.myscreen.num2.value;
+             var result = parseInt(first) / parseInt(second);
+             window.document.myscreen.res.value=result;
+         }
+         function cube() {
+             var first = window.document.myscreen.num1.value;
+             var cubeno = parseInt("first")
+             var result = parseInt(first) * parseInt(first)* parseInt(first);
+             window.document.myscreen.res.value=result;
+         }
+         function squre() {
+             var first = window.document.myscreen.num1.value;
+             var cubeno = parseInt("first")
+             var result = parseInt(first) * parseInt(first);
+             window.document.myscreen.res.value=result;
+         }
+     </script>
+    </head>
+    <body>
+        <center>
+            <h1>calculetor</h1>
+        <form name="myscreen">
+            <input type="text" name="num1" placeholder="Enter 1st Number">
+            <input type="text" name="num2" placeholder="Enter 2nd Number">
+            <input type="text" name="res" placeholder="Show the Result">
+            <input type="button" value="Add" onclick="sum()">
+            <input type="button" value="SUB" onclick="sub()">
+            <input type="button" value="MULTiply" onclick="multi()">
+            <input type="button" value="Divide" onclick="divide()">
+            <input type="button" value="cube" onclick="cube()">
+            <input type="button" value="squ" onclick="squre()">
+        </form>
+        <center>
+    </body>
+</html>
